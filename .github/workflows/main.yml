@@ -28,7 +28,6 @@ jobs:
       - uses: actions/checkout@master
     
       # Check recent commits for secrets
-      - uses: actions/checkout@master
       - name: trufflehog-actions-scan
         uses: edplato/trufflehog-actions-scan@master
         with:
