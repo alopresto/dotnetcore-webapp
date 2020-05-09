@@ -36,6 +36,8 @@ jobs:
       - name: Snyk
         uses: snyk/actions@0.1.1
         # Uses API token in secrets.SNYK_TOKEN
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
       
       # Run dotnet build and publish
       - name: dotnet build and publish
